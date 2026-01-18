@@ -1,0 +1,52 @@
+cached-property
+certifi
+cffi
+chardet
+click
+cmake
+colorama
+cycler
+Cython
+dataclasses
+einops
+# fasttext
+future
+h5py
+hdbscan
+idna
+importlib-metadata
+# intel-openmp
+joblib
+kiwisolver
+matplotlib
+# mkl
+# mkl-include
+ninja
+nltk
+numpy
+overrides
+pandas
+Pillow
+pybind11
+pycparser
+pyparsing
+python-dateutil
+pytz
+PyYAML
+regex
+requests
+scikit-learn
+scipy
+seaborn
+six
+scikit-learn
+# tbb
+threadpoolctl
+torch
+torchvision
+tqdm
+typing-extensions
+typing-utils
+urllib3
+wincertstore
+zipp
