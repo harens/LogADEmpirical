@@ -384,7 +384,11 @@ def run(args):
 if __name__ == "__main__":
     parser = arg_parser()
     args = parser.parse_args()
-    if args.config_file is not None and os.path.exists(args.config_file):
+
+    if args.config_file is not None:
+        if not os.path.exists(args.config_file):
+            raise FileNotFoundError(f"Config file {args.config_file} not found! Provide full relative/absolute path.")
+
         config_file = args.config_file
         with open(config_file, "r") as f:
             config = yaml.load(f, Loader=yaml.FullLoader)
@@ -393,4 +397,5 @@ if __name__ == "__main__":
                 if v is not None:
                     setattr(args, k, v)
         print(f"Loaded config from {config_file}!")
+
     run(args)
