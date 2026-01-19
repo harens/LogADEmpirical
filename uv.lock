@@ -20,6 +20,15 @@ wheels = [
 ]
 
 [[package]]
+name = "argformat"
+version = "0.0.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/c7/41/0bc445d0f55f85ea79ca02157c709055828c367c6f91a73d5f9665790bee/argformat-0.0.3.tar.gz", hash = "sha256:db78669f9c5b9c55e2f8784049aa00959a6848c600372087e57f0e78669f6e0d", size = 2413 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/97/d9/91d224156b2af42aae50e1f8830213515b05411e88baa9ced745ae7d9973/argformat-0.0.3-py3-none-any.whl", hash = "sha256:4bf7e31f3c193162ef7f8733734db4e614e3a23f0bdadf7af4ccffa82e882991", size = 3710 },
+]
+
+[[package]]
 name = "cached-property"
 version = "2.0.1"
 source = { registry = "https://pypi.org/simple" }
@@ -439,6 +448,7 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "accelerate" },
+    { name = "argformat" },
     { name = "cached-property" },
     { name = "certifi" },
     { name = "cffi" },
@@ -491,6 +501,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "accelerate", specifier = ">=1.12.0" },
+    { name = "argformat", specifier = ">=0.0.3" },
     { name = "cached-property", specifier = ">=2.0.1" },
     { name = "certifi", specifier = ">=2026.1.4" },
     { name = "cffi", specifier = ">=2.0.0" },
